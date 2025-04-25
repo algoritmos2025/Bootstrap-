@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejemplos justify-content en Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .demo-box {
+      border: 1px dashed gray;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body class="p-4">
+
+  <h2>Justify Content en Bootstrap</h2>
+
+  <div class="demo-box d-flex justify-content-start">
+    <div class="me-2">Inicio</div>
+    <div>Elemento</div>
+  </div>
+
+  <div class="demo-box d-flex justify-content-center">
+    <div class="me-2">Centro</div>
+    <div>Elemento</div>
+  </div>
+
+  <div class="demo-box d-flex justify-content-end">
+    <div class="me-2">Final</div>
+    <div>Elemento</div>
+  </div>
+
+  <div class="demo-box d-flex justify-content-between">
+    <div>Izquierda</div>
+    <div>Derecha</div>
+  </div>
+
+  <div class="demo-box d-flex justify-content-around">
+    <div>Item 1</div>
+    <div>Item 2</div>
+  </div>
+
+  <div class="demo-box d-flex justify-content-evenly">
+    <div>Uno</div>
+    <div>Dos</div>
+    <div>Tres</div>
+  </div>
+
+  <h3>Aplicado en fila (row)</h3>
+  <div class="row justify-content-between demo-box">
+    <div class="col-3 bg-primary text-white text-center">Col A</div>
+    <div class="col-3 bg-success text-white text-center">Col B</div>
+  </div>
+
+  <h3>Aplicado en una columna (col)</h3>
+  <div class="row demo-box">
+    <div class="col d-flex justify-content-end">
+      <button class="btn btn-warning">Botón a la derecha</button>
+    </div>
+  </div>
+
+</body>
+</html>

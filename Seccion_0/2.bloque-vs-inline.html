@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos de Bloque vs. En Línea</title>
+    <style>
+      .box {
+        border: 2px solid navy;
+        padding: 10px;
+        margin: 10px;
+        background-color: lightyellow;
+      }
+
+      .inline {
+        border: 2px dashed crimson;
+        padding: 10px;
+        margin: 10px;
+        background-color: lightgreen;
+        width: 200px; /*no qplica*/
+        height: 50px;
+      }
+
+      .seccion {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Elementos de Bloque</h2>
+    <div class="box">Soy un &lt; div&gt;</div>
+    <p class="box">Soy un &lt;p&gt;</p>
+
+    <h2>Elementos en Línea</h2>
+    <span class="inline">Soy un &lt;span&gt;</span>
+    <a href="#" class="inline">Soy un &lt;a&gt;</a>
+    <strong class="inline">Soy un &lt;strong&gt;</strong>
+    <em class="inline">Soy un &lt;em&gt;</em>
+
+    <h2>Elemento Especial</h2>
+    <button class="inline">Soy un &lt;button&gt;</button>
+  </body>
+</html>

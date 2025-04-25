@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakpoints en Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <style>
+      .demo-box {
+        background-color: lightblue;
+        border: 1px solid navy;
+        padding: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h2 class="mb-4">1. Sin breakpoints (col-6)</h2>
+      <div class="row">
+        <div class="col-6 demo-box">Columna 1</div>
+        <div class="col-6 demo-box">Columna 2</div>
+        <div class="col-6 demo-box">Columna 3</div>
+        <div class="col-6 demo-box">Columna 4</div>
+      </div>
+
+      <hr class="my-5" />
+
+      <h2 class="mb-4">2. Con breakpoint pequeño (col-sm-6)</h2>
+      <div class="row">
+        <div class="col-sm-6 demo-box">Columna 1</div>
+        <div class="col-sm-6 demo-box">Columna 2</div>
+        <div class="col-sm-6 demo-box">Columna 3</div>
+        <div class="col-sm-6 demo-box">Columna 4</div>
+      </div>
+
+      <hr class="my-5" />
+
+      <h2 class="mb-4">3. Con dos breakpoints (col-sm-6 col-md-4)</h2>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 demo-box">Columna A</div>
+        <div class="col-sm-6 col-md-4 demo-box">Columna B</div>
+        <div class="col-sm-6 col-md-4 demo-box">Columna C</div>
+        <div class="col-sm-6 col-md-4 demo-box">Columna D</div>
+      </div>
+
+      <hr class="my-5" />
+
+      <h2 class="mb-4">4. Con tres breakpoints (col-sm-6 col-md-4 col-lg-3)</h2>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 demo-box">Columna A</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 demo-box">Columna B</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 demo-box">Columna C</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 demo-box">Columna D</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 demo-box">Columna E</div>
+      </div>
+    </div>
+  </body>
+</html>

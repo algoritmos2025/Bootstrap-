@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaciado con gap y gutter en Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .demo-container {
+        background-color: #71abe6;
+        border: 2px dashed #c7ddf3;
+        padding: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .demo-box {
+        background-color: rgb(169, 197, 206);
+        border: 1px solid rgb(10, 10, 63);
+        padding: 1rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <h2 class="mb-4">Bloque 1 - d-flex con gap / row-gap / column-gap</h2>
+
+    <!-- Ejemplo 1 -->
+    <div class="demo-container d-flex gap-5 flex-wrap">
+      <div class="demo-box">Elemento 1</div>
+      <div class="demo-box">Elemento 2</div>
+      <div class="demo-box">Elemento 3</div>
+    </div>
+
+    <!-- Ejemplo 2 -->
+    <div class="demo-container d-flex column-gap-5 flex-wrap">
+      <div class="demo-box">Caja A</div>
+      <div class="demo-box">Caja B</div>
+      <div class="demo-box">Caja C</div>
+    </div>
+
+    <!-- Ejemplo 3 -->
+    <div class="demo-container d-flex flex-column row-gap-4">
+      <div class="demo-box">Fila 1</div>
+      <div class="demo-box">Fila 2</div>
+      <div class="demo-box">Fila 3</div>
+    </div>
+
+    <!-- Ejemplo 4 -->
+    <div
+      class="demo-container d-flex justify-content-center align-items-center gap-2"
+      style="height: 200px"
+    >
+      <div class="demo-box">Centro 1</div>
+      <div class="demo-box">Centro 2</div>
+    </div>
+
+    <h2 class="mt-5 mb-4">Bloque 2 - Sistema de grillas con g-*, gx-*, gy-*</h2>
+
+    <!-- Ejemplo 1 -->
+    <div class="container demo-container">
+      <div class="row gx-2">
+        <div class="col">
+          <div class="demo-box">Columna 1</div>
+        </div>
+        <div class="col">
+          <div class="demo-box">Columna 2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ejemplo 2 -->
+    <div class="container demo-container">
+      <div class="row gy-4">
+        <div class="col-6">
+          <div class="demo-box">Fila A</div>
+        </div>
+        <div class="col-6">
+          <div class="demo-box">Fila B</div>
+        </div>
+        <div class="col-6">
+          <div class="demo-box">Fila C</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ejemplo 3 -->
+    <div class="container overflow-hidden demo-container">
+      <div class="row g-5">
+        <div class="col">
+          <div class="demo-box">Overflow 1</div>
+        </div>
+        <div class="col">
+          <div class="demo-box">Overflow 2</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row ustify-content-between align-items-center">
+        <div class="col">
+          <span>Texto</span>
+          <button>Acción</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

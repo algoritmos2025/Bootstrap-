@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplos de gap en Flexbox</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: lightblue;
+        border: 1px solid navy;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .wrap-container {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body class="p-4">
+    <div class="wrap-container">
+      <h3>1. gap (general)</h3>
+      <div class="d-flex gap-4">
+        <div class="box">Caja 1</div>
+        <div class="box">Caja 2</div>
+        <div class="box">Caja 3</div>
+      </div>
+    </div>
+
+    <div class="wrap-container">
+      <h3>2. gap-x (espaciado horizontal)</h3>
+      <div class="d-flex gx-5">
+        <div class="box">Caja A</div>
+        <div class="box">Caja B</div>
+      </div>
+    </div>
+
+    <div class="wrap-container">
+      <h3>3. gap-y (espaciado vertical)</h3>
+      <div class="d-flex flex-column gap-4">
+        <div class="box">Fila 1</div>
+        <div class="box">Fila 2</div>
+      </div>
+    </div>
+  </body>
+</html>
